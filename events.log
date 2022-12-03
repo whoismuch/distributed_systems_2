@@ -1,0 +1,42 @@
+Process 8 (pid 38343, parent 38335) has STARTED
+Process 8 received all STARTED messages
+Process 8 has DONE its work
+Process 8 received all DONE messages
+Process 10 (pid 38345, parent 38335) has STARTED
+Process 10 received all STARTED messages
+Process 10 has DONE its work
+Process 10 received all DONE messages
+Process 6 (pid 38341, parent 38335) has STARTED
+Process 6 received all STARTED messages
+Process 6 has DONE its work
+Process 6 received all DONE messages
+Process 4 (pid 38339, parent 38335) has STARTED
+Process 4 received all STARTED messages
+Process 4 has DONE its work
+Process 4 received all DONE messages
+Process 3 (pid 38338, parent 38335) has STARTED
+Process 3 received all STARTED messages
+Process 3 has DONE its work
+Process 3 received all DONE messages
+Process 9 (pid 38344, parent 38335) has STARTED
+Process 9 received all STARTED messages
+Process 9 has DONE its work
+Process 9 received all DONE messages
+Process 2 (pid 38337, parent 38335) has STARTED
+Process 2 received all STARTED messages
+Process 2 has DONE its work
+Process 2 received all DONE messages
+Process 1 (pid 38336, parent 38335) has STARTED
+Process 1 received all STARTED messages
+Process 1 has DONE its work
+Process 1 received all DONE messages
+Process 5 (pid 38340, parent 38335) has STARTED
+Process 5 received all STARTED messages
+Process 5 has DONE its work
+Process 5 received all DONE messages
+Process 7 (pid 38342, parent 38335) has STARTED
+Process 7 received all STARTED messages
+Process 7 has DONE its work
+Process 7 received all DONE messages
+Process 0 received all STARTED messages
+Process 0 received all DONE messages
