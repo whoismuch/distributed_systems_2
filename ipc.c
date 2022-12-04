@@ -8,6 +8,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <errno.h>
+#include "msg_handler.h"
 
 
 int send(void *self, local_id dst, const Message *msg) {
@@ -60,29 +61,6 @@ int receive_any(void *self, Message *msg) {
     return -1;
 }
 
-int send_msgs(void *self, const char *msg,
-              MessageType messageType, timestamp_t time) {
-
-    MessageHeader message_header = {
-            .s_magic = MESSAGE_MAGIC,
-            .s_payload_len = strlen(msg),
-            .s_type = messageType,
-            .s_local_time = time
-    };
-
-
-    Message message = {
-            .s_header = message_header,
-            .s_payload = {0}
-    };
-
-    strcpy(message.s_payload, msg);
-
-    int res = send_multicast(self, &message);
-
-    return res;
-
-}
 
 int receive_all(void *self, local_id exceptPid) {
     local_id i = 0;
@@ -95,10 +73,14 @@ int receive_all(void *self, local_id exceptPid) {
             if (res == 1) {
                 i--;
             }
-            if (res == -2) {
+            else if (res == -2) {
 //                printf("ERROR\n");
                 return -1;
             }
+            else {
+                handle_msg(&message);
+            }
+
         }
         i++;
     }
